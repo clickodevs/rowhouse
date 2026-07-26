@@ -45,7 +45,7 @@ api_version = "2026-10"
   topics = [ "app/scopes_update" ]
 
 [auth]
-redirect_urls = [ "https://rowhouse.clicko.dev/auth/callback", "https://rowhouse.clicko.dev/auth/shopify/callback" ]
+redirect_urls = [ "https://rowhouse.clicko.dev/api/auth" ]
 
 [build]
 automatically_update_urls_on_dev = true
