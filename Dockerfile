@@ -1,11 +1,11 @@
-FROM node:20-alpine
+FROM node:22-alpine
 RUN apk add --no-cache openssl
 
 WORKDIR /app
 
 # Install all dependencies (including devDependencies required for react-router build)
 COPY package.json package-lock.json* ./
-RUN npm ci
+RUN npm ci --engine-strict=false
 
 # Copy application files
 COPY . .
@@ -15,7 +15,7 @@ RUN npx prisma generate
 RUN npm run build
 
 # Remove devDependencies to optimize image size
-RUN npm prune --omit=dev && npm cache clean --force
+RUN npm prune --omit=dev --engine-strict=false && npm cache clean --force
 
 ENV NODE_ENV=production
 ENV PORT=3000
