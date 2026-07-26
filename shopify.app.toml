@@ -1,7 +1,7 @@
 # Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
 client_id = "0579eb481a28b30ad64ee27fbebc6978"
-application_url = "https://example.com"
+application_url = "https://rowhouse.clicko.dev"
 embedded = true
 name = "rowhouse"
 
@@ -45,7 +45,7 @@ api_version = "2026-10"
   topics = [ "app/scopes_update" ]
 
 [auth]
-redirect_urls = [ "https://example.com/api/auth" ]
+redirect_urls = [ "https://rowhouse.clicko.dev/auth/callback", "https://rowhouse.clicko.dev/auth/shopify/callback" ]
 
 [build]
 automatically_update_urls_on_dev = true
