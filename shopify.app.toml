@@ -1,6 +1,6 @@
 # Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
-client_id = "0579eb481a28b30ad64ee27fbebc6978"
+client_id = "34738654bb25446ef69e36a8f44bd7a9"
 application_url = "https://rowhouse.clicko.dev"
 embedded = true
 name = "rowhouse"
